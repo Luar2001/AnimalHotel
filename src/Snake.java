@@ -9,7 +9,6 @@ public class Snake extends Animal {
 
     public Snake(double wight) {
 
-
         setType(typeOfFood.snakePellets);
 
     }

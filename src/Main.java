@@ -16,7 +16,7 @@ public class Main {
         Snake Hypno = new Snake(1);
 
         //A list with all the guests
-        // TODO: 29/09/2020 figure out a better way to do this
+        // TODO: 29/09/2020 figure out a better way to make a list
         List<Animal> guests = new ArrayList<>();
 
         guests.add(Sixten);
