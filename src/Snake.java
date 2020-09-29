@@ -13,7 +13,7 @@ public class Snake extends Animal {
         setType(typeOfFood.snakePellets);
 
     }
-
+    //polymorphism
     @Override
     public int getFoodPortion() {
         //returns 20 instead of original value
