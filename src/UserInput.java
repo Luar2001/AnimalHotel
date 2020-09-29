@@ -29,24 +29,24 @@ public class UserInput {
         guestsString.add("Hypno");
 
         try {
-            boolean q = false;
-            for (int i = 0; (i <= guestsString.size() || q); i++) {
+            boolean foundMatch = false;
+            for (int i = 0; (i < guestsString.size()); i++) {
                 if (guestsString.get(i).toLowerCase().equals(input.toLowerCase())) {
 
-                    q = true;
+                    foundMatch = true;
 
                     JOptionPane.showMessageDialog(null, guestsString.get(i) + " should eat " +
                             guests.get(i).getFoodPortion() + "g of " + guests.get(i).getFoodType());
-                }/* else if (guestsString.size() == i) {
+                } else if (guestsString.size() - 1 == i && !foundMatch) {
 
                     JOptionPane.showMessageDialog(null, "ERROR: We currently have no guest by that name. ");
 
-                }*/
+                }
             }
 
         } catch (Exception e) {
 
-            JOptionPane.showMessageDialog(null, "ERROR: We currently have no guest by that name. ");
+            JOptionPane.showMessageDialog(null, "ERROR: We currently have no guest by that name. " + e.getMessage());
 
         }
 
