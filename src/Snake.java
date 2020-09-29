@@ -17,6 +17,7 @@ public class Snake extends Animal {
 
     }
 
+    //polymorphism
     /**
      * an override of the method in animal that gets the foodPortion for the Animal
      *
