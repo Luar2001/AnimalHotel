@@ -7,7 +7,7 @@
  **/
 public abstract class Animal implements ConvertToGram {
 
-    //inkapsling private public och protected
+    //inkapsling private
 
     public typeOfFood foodType;
     //wight of the animal in kg

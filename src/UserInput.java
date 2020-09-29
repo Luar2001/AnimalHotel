@@ -22,26 +22,26 @@ public class UserInput {
         // TODO: 29/09/2020 change this entire thing to a toString version of guests
         List<String> guestsString = new ArrayList<>();
 
-        guestsString.add("sixten");
-        guestsString.add("dogge");
-        guestsString.add("venus");
-        guestsString.add("ove");
-        guestsString.add("hypno");
+        guestsString.add("Sixten");
+        guestsString.add("Dogge");
+        guestsString.add("Venus");
+        guestsString.add("Ove");
+        guestsString.add("Hypno");
 
         try {
             boolean q = false;
             for (int i = 0; (i <= guestsString.size() || q); i++) {
-                if (guestsString.get(i).equals(input.toLowerCase())) {
+                if (guestsString.get(i).toLowerCase().equals(input.toLowerCase())) {
 
                     q = true;
 
-                    JOptionPane.showMessageDialog(null, guestsString.get(i) + " Should eat " +
+                    JOptionPane.showMessageDialog(null, guestsString.get(i) + " should eat " +
                             guests.get(i).getFoodPortion() + "g of " + guests.get(i).getFoodType());
-                } else if (guestsString.size() == i) {
+                }/* else if (guestsString.size() == i) {
 
                     JOptionPane.showMessageDialog(null, "ERROR: We currently have no guest by that name. ");
 
-                }
+                }*/
             }
 
         } catch (Exception e) {
