@@ -36,16 +36,5 @@ public class Main {
         //calls for the class userInput
         UserInput.ifInputInList(input, guests);
 
-
-        /* test code
-        System.out.println("List of Food Portions " +
-                "\nSixten: " + Sixten.getFoodPortion() + "g of " + Sixten.getType() +
-                "\nDogge: " + Dogge.getFoodPortion() + "g of " + Dogge.getType() +
-                "\nVenus: " + Venus.getFoodPortion() + "g of " + Venus.getType() +
-                "\nOve: " + Ove.getFoodPortion() + "g of " + Ove.getType() +
-                "\nHypno: " + Hypno.getFoodPortion() + "g of " + Hypno.getType()
-        );
-        */
-
     }
 }

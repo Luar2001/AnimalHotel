@@ -6,7 +6,11 @@
  * Copyright: MIT
  **/
 public class Dog extends Animal {
-
+    /**
+     * This is the constructor for the dogs
+     *
+     * @param wight The wight of the Animal in kg
+     */
     public Dog(double wight) {
 
         //sets the dogs wight
