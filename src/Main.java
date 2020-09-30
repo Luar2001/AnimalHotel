@@ -25,9 +25,6 @@ public class Main {
         guests.add(Ove);
         guests.add(Hypno);
 
-        System.out.println();
-
-
         //User inputs the name of the animal that should be fed
         String input = JOptionPane.showInputDialog("Input Animals name: ");
 
